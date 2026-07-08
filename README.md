@@ -4,7 +4,7 @@
 # USS SNOWLAB
 ### Enterprise Infrastructure Project
 
-> "Every expert was once the person who clicked 'Next' for the first time."
+> "The computer doesn't care what you know. It responds to what you build."
 
 This repository documents my journey from learning Windows Server to building and administering an enterprise Active Directory environment.
 
