@@ -50,23 +50,131 @@ Current Status
 
 
 
-Hostname
+
+
+# Captain's Deployment Logs
+
+---
+
+
+
+### 📖 Log 001 — Windows Server 2022 Deployed
+
+Mission Control confirmed the successful deployment of Windows Server 2022 on **SNOWLAB-DC01**.
+
+At this stage, the server was operating as a standalone Windows installation with no infrastructure roles assigned. From this point forward, every service would be intentionally configured to build the SnowLab enterprise environment.
+
+![Windows Server 2022 Installed](Images/AD_install_dashboard_complete.png)
+
+### 🖖 Captain's Reflection
+
+Every enterprise environment starts somewhere. Before Active Directory, DNS, or Group Policy, there has to be a stable operating system. Seeing Server Manager for the first time marked the official beginning of SnowLab and the foundation for every mission that followed.
+
+---
+
+## 📖 Log 002 — Static Network Configuration
+
+Before promoting the server to a Domain Controller, a static IPv4 address was assigned to ensure reliable DNS and Active Directory services.
+
+![Static IP](screenshots/02-static-ip.png)
+
+---
+
+## 📖 Log 003 — Installing Active Directory Domain Services
+
+The Active Directory Domain Services (AD DS) role was successfully installed on **SNOWLAB-DC01**.
+
+At this stage, the server had not yet become a Domain Controller. Windows Server requires a second configuration phase where the server is promoted into a new or existing forest.
+
+This marked the transition from a standalone Windows Server to enterprise infrastructure.
+
+![SnowLab Administrator Account](Images/AD_installed.png)
+
+---
+
+
+
+### 📖 Log 004 — Establishing the SnowLab Forest
+
+![Create the Forest](Images/domain_server_role_2.png)
+
+
+
+The SnowLab environment officially received its enterprise identity by creating the snowlab.local forest.
+
+The Active Directory configuration wizard was used to create the first enterprise forest, **snowlab.local**.
+
+This established the identity of the SnowLab environment and prepared the server for promotion into the first Domain Controller.
+
+![Forest Created](Images/domain_controller_options.png)
+
+### 🌐 DNS Delegation Advisory
+
+During the forest creation process, Windows displayed a DNS delegation warning.
+
+![DNS Delegation](Images/delegation_warning.png)
+
+Because SnowLab was creating a brand-new private Active Directory forest (`snowlab.local`), there was no parent DNS zone from which a delegation could be created.
+
+This warning did not prevent deployment.
+
+### 🖖 Captain's Reflection
+
+This was one of the biggest learning moments during the deployment.
+
+At the start I assumed the warning indicated a failed configuration. After researching the message, I learned that DNS delegation is only required when integrating with an existing DNS hierarchy.
+
+Understanding why the warning appeared helped me better understand the relationship between Active Directory and DNS.
+
+## 📖 Log 005 — Domain Controller Promotion (SNOWLAB-DC01 enters service)
+
+Following prerequisite validation,
+
+
+![Prereq Validation](Images/prereq_passed.png)
+
+
+
+
+
+
+SNOWLAB-DC01 entered service as the first Domain Controller.
+
+
+The server was successfully promoted to the first Domain Controller for the SnowLab forest.
+
+![SnowLab Administrator Account](Images/promote_to_domain_controller.png)
+
+---
+
+## 📖 Log 006 — Successful Authentication
+
+Domain services were verified after promotion.
+
+![SnowLab Administrator Account](Images/snowlab_admin_.png)
+
+
+
+
+
+
+# Hostname
 
 SNOWLAB-DC01
 
-Operating System
+# Operating System
 
 Windows Server 2022
 
-Role
+# Role
 
 Domain Controller
 
-Forest
+# Forest
 
 snowlab.local
 
-Primary Services
+# Primary Services
 
 • Active Directory
 • DNS
@@ -94,20 +202,6 @@ Primary Services
 
 
 
-[✓] Domain Controller Promotion
-
-
-### SNOWLAB-DC01 enters service
-
-The server was successfully promoted to the first Domain Controller for the SnowLab forest.
-
-![SnowLab Administrator Account](Images/promote_to_domain_controller.png)
-
-
-[✓] Domain Authentication
-
-![SnowLab Administrator Account](Images/snowlab_admin_.png))
-
 
 [ ] Organizational Units
 
@@ -121,21 +215,19 @@ The server was successfully promoted to the first Domain Controller for the Snow
 
 
 
-Operation 002
+Mission 002 — Organize Starfleet Personnel (Organizational Units)
 
-Enterprise Organizational Units
+Status: Awaiting Orders
 
-Operation 003
+Mission 003 — Bring Additional Crew Aboard (Windows 11 Domain Join)
 
-Windows 11 Domain Join
+Status: Awaiting Orders
 
-Operation 004
+Mission 004 — Starfleet Directives (Group Policy)
 
-Group Policy Deployment
+Status: Awaiting Orders
 
-Operation 005
-
-PowerShell Automation
+Mission 005 — Automation Protocols (PowerShell)
 
 
 
