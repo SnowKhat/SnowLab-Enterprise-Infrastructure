@@ -101,9 +101,12 @@ Primary Services
 
 The server was successfully promoted to the first Domain Controller for the SnowLab forest.
 
+![SnowLab Administrator Account](Images/promote_to_domain_controller.png)
+
 
 [✓] Domain Authentication
 
+![SnowLab Administrator Account](Images/snowlab_admin_.png))
 
 
 [ ] Organizational Units
