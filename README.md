@@ -35,6 +35,28 @@ Current focus has shifted from deployment to administration as the next phase in
                        │
           Future Enterprise Systems
 
+
+# ⚓ Mission Preparation
+
+Before commissioning the SnowLab enterprise environment, I first built the virtual infrastructure using Oracle VirtualBox.
+
+The lab was configured with:
+
+- **Hypervisor:** Oracle VirtualBox
+- **Virtual Machine:** SNOWLAB-DC01
+- **Operating System:** Windows Server 2022 (64-bit)
+- **Memory:** 6 GB RAM
+- **Processors:** 2 vCPUs
+- **Storage:** 80 GB Virtual Disk
+- **Network Adapter:** NAT
+
+This virtual machine serves as the foundation of the SnowLab enterprise infrastructure.
+
+![Oracle VirtualBox Configuration](Images/build_what_it_should_look_like.png)
+
+
+
+
           
 Current Status
 
