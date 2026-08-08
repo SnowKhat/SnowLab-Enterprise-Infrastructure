@@ -2,7 +2,7 @@
 # Domain Controller Creation
 
 
-#SnowLab.DC1 
+# SnowLab.DC1 
 
 
 > "The computer doesn't care what you know. It responds to what you build."
