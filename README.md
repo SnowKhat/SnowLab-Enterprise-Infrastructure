@@ -8,33 +8,35 @@
 > ## "The unknown isn't something to fear. It's something to explore."
 
 
-## // SYSTEM OVERVIEW
 
-**VESSEL:** USS SNOWLAB 
+## 🟧 LCARS // SYSTEM OVERVIEW
 
-**DESIGNATION:** Enterprise Infrastructure Home Lab 
+> **USS SNOWLAB // ENTERPRISE INFRASTRUCTURE HOME LAB**
 
-**PRIMARY DOMAIN:** `snowlab.local`  
+- 🖥️ **Command Node:** `SNOWLAB-DC01`
+- 🌐 **Primary Domain:** `snowlab.local`
+- 🛰️ **Environment:** Oracle VirtualBox
+- 🟢 **Mission Status:** ACTIVE DEVELOPMENT
 
-**COMMAND NODE:** `SNOWLAB-DC01`  
+---
 
-**MISSION STATUS:** ACTIVE DEVELOPMENT  
+### 🖖 MISSION PROFILE
 
-USS SnowLab is an evolving enterprise IT home lab designed to bring
-multiple areas of technology together inside one working environment.
+USS SnowLab is an evolving enterprise IT environment built to turn
+individual technologies into one connected, working infrastructure.
 
-This page serves as the **central command interface** for the entire
-project.
+The mission is to develop hands-on experience across:
 
-Each system added to SnowLab has a purpose: to move beyond studying
-individual concepts and learn how infrastructure behaves when those
-technologies must operate together.
+- **Windows Administration** // Server, Clients & Active Directory
+- **Network Operations** // TCP/IP, DNS & Segmentation
+- **Identity & Access** // Users, Groups & Authentication
+- **Security** // Isolation, Access Control & Troubleshooting
+- **Automation** // PowerShell & Administrative Tasks
+- **Future Systems** // Microsoft 365, Azure & Cloud Technologies
 
-The environment will continue to expand across Windows administration,
-networking, identity, security, endpoint management, troubleshooting,
-cloud technologies, and automation.
+> **This is not one lab. This is where the systems come together.**
 
-This is not one lab.
+`LCARS // SYSTEM STATUS: OPERATIONAL`
 
 **This is the environment where the labs connect.**
 ---
@@ -156,3 +158,5 @@ Automate repetitive Windows and Active Directory administration.
 
 `LCARS // MISSION DATABASE ONLINE`  
 `6 MISSIONS REGISTERED // 1 COMPLETE // 1 ACTIVE // 4 PLANNED`
+
+
