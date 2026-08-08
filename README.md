@@ -102,7 +102,7 @@ The environment is currently hosted in Oracle VirtualBox and centered around the
 Deployed **SNOWLAB-DC01** as the first Domain Controller for the
 `snowlab.local` forest.
 
-[🖖 ACCESS MISSION RECORD →](Active-Directory/README.md)
+[🖖 Active Directory/Domain Controller →](Active-Directory/README.md)
 
 ---
 
