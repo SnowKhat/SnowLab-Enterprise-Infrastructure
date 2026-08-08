@@ -3,32 +3,152 @@
 
 > ## "The unknown isn't something to fear. It's something to explore."
 
-USS SnowLab is my hands-on enterprise IT environment built to develop practical experience with Windows administration, networking, security, and technical support.
 
-The project began with a single Windows Server 2022 virtual machine and the deployment of my first Active Directory Domain Controller. As the environment grows, each new mission introduces another part of the infrastructure and another opportunity to learn through hands-on administration, troubleshooting, and documentation.
+## // SYSTEM OVERVIEW
 
-Rather than following one tutorial from beginning to end, I am building SnowLab as an evolving small-business environment where I am responsible for the infrastructure.
+**VESSEL:** USS SNOWLAB 
 
+**DESIGNATION:** Enterprise Infrastructure Home Lab 
+
+**PRIMARY DOMAIN:** `snowlab.local`  
+
+**COMMAND NODE:** `SNOWLAB-DC01`  
+
+**MISSION STATUS:** ACTIVE DEVELOPMENT  
+
+USS SnowLab is an evolving enterprise IT home lab designed to bring
+multiple areas of technology together inside one working environment.
+
+This page serves as the **central command interface** for the entire
+project.
+
+Each system added to SnowLab has a purpose: to move beyond studying
+individual concepts and learn how infrastructure behaves when those
+technologies must operate together.
+
+The environment will continue to expand across Windows administration,
+networking, identity, security, endpoint management, troubleshooting,
+cloud technologies, and automation.
+
+This is not one lab.
+
+**This is the environment where the labs connect.**
 ---
 
 # 🛰️ Enterprise Architecture
 
 The environment is currently hosted in Oracle VirtualBox and centered around the `snowlab.local` Active Directory domain.
 
-```text
-                         Internet
+
+  
+
+# 🟦 LCARS // NETWORK TOPOLOGY
+
+                         INTERNET
                             │
-                     Home Network
+                      HOME NETWORK
                             │
-                    Oracle VirtualBox
+                    ORACLE VIRTUALBOX
                             │
-                     USS SNOWLAB
+                     ┌──────┴──────┐
+                     │ USS SNOWLAB │
+                     └──────┬──────┘
                             │
-                  ┌─────────┴─────────┐
-                  │                   │
-             SNOWLAB-DC01        Future Systems
-             Windows Server
-                  │
-             snowlab.local
-                  │
-          Active Directory / DNS
+                       snowlab.local
+                            │
+                    ┌───────┴────────┐
+                    │                │
+              SNOWLAB-DC01      FUTURE SYSTEMS
+              Server 2022
+               AD DS / DNS
+
+          ⚠ NETWORK REDESIGN IN PROGRESS
+
+
+---
+
+# 🟨 LCARS // SYSTEMS DATABASE
+
+| SYSTEM | DESIGNATION | STATUS |
+|---|---|---|
+| 🖥️ Windows Server | SNOWLAB-DC01 | 🟢 ONLINE |
+| 🪪 Active Directory | snowlab.local | 🟢 OPERATIONAL |
+| 🌐 DNS | Windows Server DNS | 🟢 OPERATIONAL |
+| 🛡️ Network Perimeter | SnowLab Network | 🟡 RECONFIGURATION |
+| 💻 Windows 11 Endpoint | SNOWLAB-CLIENT01 | 🔵 PLANNED |
+| 👥 Enterprise Identity | OUs / Users / Groups | 🔵 PLANNED |
+| 📜 Group Policy | Centralized Management | 🔵 PLANNED |
+| ⚙️ PowerShell | Administration Automation | 🔵 PLANNED |
+
+
+---
+
+---
+
+# 🟥 LCARS // MISSION DATABASE
+### SnowLab Project Directory
+
+---
+
+## 🟢 001 // DOMAIN CONTROLLER COMMISSIONING
+### *(Windows Server 2022 / Active Directory / DNS)*
+
+`STATUS // COMPLETE`
+
+Deployed **SNOWLAB-DC01** as the first Domain Controller for the
+`snowlab.local` forest.
+
+[🖖 ACCESS MISSION RECORD →](Active-Directory/README.md)
+
+---
+
+## 🟡 002 // SECURITY PERIMETER
+### *(Network Segmentation / VirtualBox Networking)*
+
+`STATUS // ACTIVE`
+
+Isolate SnowLab infrastructure from the home network while maintaining
+required lab connectivity.
+
+`MISSION RECORD // INITIALIZING`
+
+---
+
+## 🔵 003 // FIRST CONTACT
+### *(Windows 11 Domain Join / Authentication)*
+
+`STATUS // PLANNED`
+
+Deploy the first Windows 11 endpoint and join it to `snowlab.local`.
+
+---
+
+## 🔵 004 // CREW PROVISIONING
+### *(Active Directory Users / OUs / Security Groups)*
+
+`STATUS // PLANNED`
+
+Build the enterprise identity structure and begin user administration.
+
+---
+
+## 🔵 005 // COMMAND DIRECTIVES
+### *(Group Policy Administration)*
+
+`STATUS // PLANNED`
+
+Deploy centralized Windows configurations and security policies.
+
+---
+
+## 🔵 006 // AUTOMATED SYSTEMS
+### *(PowerShell Administration & Automation)*
+
+`STATUS // PLANNED`
+
+Automate repetitive Windows and Active Directory administration.
+
+---
+
+`LCARS // MISSION DATABASE ONLINE`  
+`6 MISSIONS REGISTERED // 1 COMPLETE // 1 ACTIVE // 4 PLANNED`
