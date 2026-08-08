@@ -7,9 +7,6 @@
 
 > "The computer doesn't care what you know. It responds to what you build."
 
-This repository documents my journey from learning Windows Server to building and administering an enterprise Active Directory environment.
-
-Rather than following a single tutorial, I'm treating this project as if I were responsible for deploying infrastructure inside a small business. Every configuration, mistake, and lesson learned is documented as the environment grows.
 
 
 # Captain's Log
