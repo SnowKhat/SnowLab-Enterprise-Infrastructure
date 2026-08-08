@@ -1,6 +1,10 @@
 # 🖖 USS SNOWLAB
 ### Enterprise Infrastructure Home Lab
 
+<p align="center">
+  <img src="assets/uss_snowlab_lcars_banner.gif" alt="USS SnowLab LCARS Command Banner" />
+</p>
+
 > ## "The unknown isn't something to fear. It's something to explore."
 
 
