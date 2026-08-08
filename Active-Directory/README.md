@@ -53,7 +53,7 @@ The lab was configured with:
 
 This virtual machine serves as the foundation of the SnowLab enterprise infrastructure.
 
-![Oracle VirtualBox Configuration](Images/build_what_it_should_look_like.png)
+![Oracle VirtualBox Configuration](../Images/build_what_it_should_look_like.png)
 
 
 
@@ -87,7 +87,7 @@ Mission Control confirmed the successful deployment of Windows Server 2022 on **
 
 At this stage, the server was operating as a standalone Windows installation with no infrastructure roles assigned. From this point forward, every service would be intentionally configured to build the SnowLab enterprise environment.
 
-![Windows Server 2022 Installed](Images/AD_install_dashboard_complete.png)
+![Windows Server 2022 Installed](../Images/AD_install_dashboard_complete.png)
 
 ### 🖖 Captain's Reflection
 
@@ -119,7 +119,7 @@ This marked the transition from a standalone Windows Server to enterprise infras
 
 ### 📖 Log 004 — Establishing the SnowLab Forest
 
-![Create the Forest](Images/domain_server_role_2.png)
+![Create the Forest](../Images/domain_server_role_2.png)
 
 
 
@@ -129,13 +129,13 @@ The Active Directory configuration wizard was used to create the first enterpris
 
 This established the identity of the SnowLab environment and prepared the server for promotion into the first Domain Controller.
 
-![Forest Created](Images/domain_controller_options.png)
+![Forest Created](../Images/domain_controller_options.png)
 
 ### 🌐 DNS Delegation Advisory
 
 During the forest creation process, Windows displayed a DNS delegation warning.
 
-![DNS Delegation](Images/delegation_warning.png)
+![DNS Delegation](../Images/delegation_warning.png)
 
 Because SnowLab was creating a brand-new private Active Directory forest (`snowlab.local`), there was no parent DNS zone from which a delegation could be created.
 
@@ -154,7 +154,7 @@ Understanding why the warning appeared helped me better understand the relations
 Following prerequisite validation,
 
 
-![Prereq Validation](Images/prereq_passed.png)
+![Prereq Validation](../Images/prereq_passed.png)
 
 
 
@@ -166,7 +166,7 @@ SNOWLAB-DC01 entered service as the first Domain Controller.
 
 The server was successfully promoted to the first Domain Controller for the SnowLab forest.
 
-![SnowLab Administrator Account](Images/promote_to_domain_controller.png)
+![SnowLab Administrator Account](../Images/promote_to_domain_controller.png)
 
 ---
 
@@ -174,7 +174,7 @@ The server was successfully promoted to the first Domain Controller for the Snow
 
 Domain services were verified after promotion.
 
-![SnowLab Administrator Account](Images/snowlab_admin_.png)
+![SnowLab Administrator Account](../Images/snowlab_admin_.png)
 
 
 
