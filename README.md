@@ -9,7 +9,7 @@
 
 
 
-## 🟧 LCARS // SYSTEM OVERVIEW
+## 🟧  // SYSTEM OVERVIEW
 
 > **USS SNOWLAB // ENTERPRISE INFRASTRUCTURE HOME LAB**
 
@@ -48,7 +48,7 @@ The environment is currently hosted in Oracle VirtualBox and centered around the
 
   
 
-# 🟦 LCARS // NETWORK TOPOLOGY
+# 🟦 // NETWORK TOPOLOGY
 
                          INTERNET
                             │
@@ -73,7 +73,7 @@ The environment is currently hosted in Oracle VirtualBox and centered around the
 
 ---
 
-# 🟨 LCARS // SYSTEMS DATABASE
+# 🟨 // SYSTEMS DATABASE
 
 | SYSTEM | DESIGNATION | STATUS |
 |---|---|---|
@@ -91,7 +91,7 @@ The environment is currently hosted in Oracle VirtualBox and centered around the
 
 ---
 
-# 🟥 LCARS // MISSION DATABASE
+# 🟥 // MISSION DATABASE
 ### SnowLab Project Directory
 
 ---
@@ -156,7 +156,7 @@ Automate repetitive Windows and Active Directory administration.
 
 ---
 
-`LCARS // MISSION DATABASE ONLINE`  
+` // MISSION DATABASE ONLINE`  
 `6 MISSIONS REGISTERED // 1 COMPLETE // 1 ACTIVE // 4 PLANNED`
 
 
